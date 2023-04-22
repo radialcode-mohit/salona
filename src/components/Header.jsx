@@ -67,7 +67,7 @@ const Header = () => {
             
           </marquee> */}
           <Marquee speed={100}>
-            <img src={imgone} alt="imgone" />
+            <img src={imgone} alt="imgone" className="ms-3" />
             <img src={imgtwo} alt="imgtwo" className="ms-5" />
             <img src={imgthree} alt="imgthree" className="ms-5" />
             <img src={imgfour} alt="imgfour" className="ms-5" />

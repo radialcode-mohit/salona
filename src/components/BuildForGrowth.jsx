@@ -19,7 +19,7 @@ const BuildForGrowth = () => {
           </div>
           <div>
             <div className="mt-lg-0 max_w_300px_overf_x_scrl mt-3 scroll">
-              <div className="d-flex align-items-center justify-content-lg-end gap-4  max_w_589">
+              <div className="d-flex align-items-center justify-content-lg-end gap-4  max_w_589 py-3 py-lg-0">
                 <div
                   onClick={() => {
                     setfirst(0);

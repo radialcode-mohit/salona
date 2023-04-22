@@ -11,7 +11,7 @@ import utube from "../assets/images/img/footer/utube.png";
 const Footer = () => {
   return (
     <footer className="bg_footer_ py-5">
-      <Container className="py-4">
+      <Container className="py-lg-4">
         <Row className=" justify-content-between">
           <Col md={4}>
             <div>

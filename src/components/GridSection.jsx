@@ -10,22 +10,21 @@ import seven from "../assets/images/img/marque/3800.png";
 import eight from "../assets/images/img/marque/mens.png";
 import bgimg from "../assets/images//img/marque/bgimg.png";
 import Marquee from "react-fast-marquee";
-// import utube from "../assets/images/img/marque/Frame.png";
 const GridSection = () => {
   const [last, setlast] = useState(2);
   return (
     <section className=" position-relative overflow-hidden py-lg-5">
       <Container className="pt-5">
-        <p className=" ff_helvetica fw_400 fs_xl clrr_white">
+        <p className=" ff_helvetica fw_400 fs_xl clrr_white text-center text-lg-start">
           Join a thriving community.
         </p>
       </Container>
       <Marquee>
         <div className="d-grid gridclass">
-          <div className="girditems grid1">
+          <div className="girditems grid1 ms-3">
             <img src={first} alt="first" className="w-100" />
           </div>
-          <div className="girditems grid2">
+          <div className="girditems grid2 ms-3">
             <img src={second} alt="second" className="w-100" />
           </div>
           <div className="girditems grid3">
@@ -74,7 +73,6 @@ const GridSection = () => {
             Start building
           </button>
         </div>
-        {/* <div className="py-5"></div> */}
         <div className="py-lg-5"></div>
       </Container>
     </section>

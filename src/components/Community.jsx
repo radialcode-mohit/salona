@@ -54,7 +54,7 @@ const Community = () => {
                 Made for
               </p>
               <p className="ff_helvetica fw_400 fs_xl clrr_white">
-                mass adoption
+                mass adoption.
               </p>
               <span className=" ff_roboto fw_400 fs_4xsm clr_c4 text_uppercase bluedot ps-2">
                 Live data
@@ -130,9 +130,16 @@ const Community = () => {
                       </p>
                       <p className=" ff_helvetica fw_400 fs_sm clr_c4 pe-5">
                         Solana’s proof of stake network and other innovations
-                        minimize its impact on the environment. Each Solana
-                        transaction uses about the same energy as a few Google
-                        searches.
+                        minimize its impact on the{" "}
+                        <a
+                          href="#"
+                          className="clr_green text-decoration-underline"
+                        >
+                          {" "}
+                          environment.
+                        </a>
+                        Each Solana transaction uses about the same energy as a
+                        few Google searches.
                       </p>
                       <p className=" ff_helvetica fw_400 fs_4md clrr_white ps-2">
                         0%
