@@ -27,37 +27,21 @@ const MyNav = () => {
             <div
               className={
                 first
-                  ? " d-flex mobile_nav_modification flex-column flex-lg-row left_minus_100per z_index_500 text-center text-lg-start"
-                  : "d-flex mobile_nav_modification flex-column flex-lg-row left_0 z_index_500 text-center text-lg-start"
+                  ? " d-flex mobile_nav_modification align-items-center flex-column flex-lg-row left_minus_100per z_index_500 text-center text-lg-start"
+                  : "d-flex mobile_nav_modification align-items-center flex-column flex-lg-row left_0 z_index_500 text-center text-lg-start"
               }
             >
-              {/* <DropdownButton
-                id="dropdown-basic-button"
-                title="Learn"
-                className="bg_unset ff_helvetica fw_400 fs_sm clr_grey clr_max_white mt-5 mt-lg-0"
-              >
-                <Dropdown.Item
-                  href="#/action-1"
-                  className="ff_helvetica fw_400 fs_sm clr_grey"
-                >
-                  Action
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-2"
-                  className="ff_helvetica fw_400 fs_sm clr_grey"
-                >
-                  Another action
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-3"
-                  className="ff_helvetica fw_400 fs_sm clr_grey"
-                >
-                  Something else
-                </Dropdown.Item>
-              </DropdownButton> */}
-              <div class="downarrow">
+              <div class="downarrow mt-5 mt-lg-0">
                 <button class="down clr_white  ff_helvetica d-flex align-items-center">
-                  <p className="p-0 m-0 text-center text-lg-start"> Learn</p>
+                  <p
+                    className="p-0 m-0 text-center text-lg-start"
+                    onClick={() => {
+                      setfirst(!first);
+                    }}
+                  >
+                    {" "}
+                    Learn
+                  </p>
                   <img
                     className=" ps-1 d-none d-lg-block"
                     src={downicon}
@@ -70,9 +54,17 @@ const MyNav = () => {
                   <a href="#">Blockchain</a>
                 </div>
               </div>
-              <div class="downarrow   ms-lg-5">
+              <div class="downarrow   ms-lg-5 mt-5 mt-lg-0">
                 <button class="down clr_white  ff_helvetica d-flex align-items-center">
-                  <p className="p-0 m-0 text-center text-lg-start"> Build</p>
+                  <p
+                    className="p-0 m-0 text-center text-lg-start"
+                    onClick={() => {
+                      setfirst(!first);
+                    }}
+                  >
+                    {" "}
+                    Build
+                  </p>
                   <img
                     className=" ps-1 d-none d-lg-block"
                     src={downicon}
@@ -86,9 +78,17 @@ const MyNav = () => {
                   <a href="#">Enviromental </a> <a href="#">Blockchain</a>
                 </div>
               </div>
-              <div class="downarrow ms-lg-5">
+              <div class="downarrow ms-lg-5 mt-5 mt-lg-0">
                 <button class="down clr_white  ff_helvetica d-flex align-items-center">
-                  <p className="p-0 m-0 text-center text-lg-start"> Network</p>
+                  <p
+                    className="p-0 m-0 text-center text-lg-start"
+                    onClick={() => {
+                      setfirst(!first);
+                    }}
+                  >
+                    {" "}
+                    Network
+                  </p>
                   <img
                     className=" ps-1 d-none d-lg-block"
                     src={downicon}
@@ -100,9 +100,14 @@ const MyNav = () => {
                   <a href="#">Blockchain</a> <a href="#">Intro to NFT</a>{" "}
                 </div>
               </div>
-              <div class="downarrow ms-lg-5">
+              <div class="downarrow ms-lg-5 mt-5 mt-lg-0">
                 <button class="down clr_white  ff_helvetica d-flex align-items-center">
-                  <p className="p-0 m-0 text-center text-lg-start">
+                  <p
+                    className="p-0 m-0 text-center text-lg-start"
+                    onClick={() => {
+                      setfirst(!first);
+                    }}
+                  >
                     {" "}
                     Community
                   </p>
@@ -117,78 +122,6 @@ const MyNav = () => {
                   <a href="#">Enviromental </a>
                 </div>
               </div>
-              {/* <DropdownButton
-                id="dropdown-basic-button"
-                title="Build"
-                className="bg_unset ff_helvetica fw_400 fs_sm clr_grey mx-lg-4 mt-5 mt-lg-0"
-              >
-                <Dropdown.Item
-                  href="#/action-1"
-                  className="ff_helvetica fw_400 fs_sm clr_grey"
-                >
-                  Action
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-2"
-                  className="ff_helvetica fw_400 fs_sm clr_grey"
-                >
-                  Another action
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-3"
-                  className="ff_helvetica fw_400 fs_sm clr_grey"
-                >
-                  Something else
-                </Dropdown.Item>
-              </DropdownButton>
-              <DropdownButton
-                id="dropdown-basic-button"
-                title="Network"
-                className="bg_unset ff_helvetica fw_400 fs_sm clr_grey mt-5 mt-lg-0"
-              >
-                <Dropdown.Item
-                  href="#/action-1"
-                  className="ff_helvetica fw_400 fs_sm clr_grey"
-                >
-                  Action
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-2"
-                  className="ff_helvetica fw_400 fs_sm clr_grey"
-                >
-                  Another action
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-3"
-                  className="ff_helvetica fw_400 fs_sm clr_grey"
-                >
-                  Something else
-                </Dropdown.Item>
-              </DropdownButton>
-              <DropdownButton
-                id="dropdown-basic-button"
-                title="Community"
-                className="bg_unset ff_helvetica fw_400 fs_sm clr_grey ms-lg-4 mt-5 mt-lg-0"
-              >
-                <Dropdown.Item
-                  href="#/action-1"
-                  className="ff_helvetica fw_400 fs_sm clr_grey"
-                >
-                  Action
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-2"
-                  className="ff_helvetica fw_400 fs_sm clr_grey"
-                >
-                  Another action
-                </Dropdown.Item>
-                <Dropdown.Item
-                  href="#/action-3"
-                  className="ff_helvetica fw_400 fs_sm clr_grey"
-                >
-                  Something else
-                </Dropdown.Item>
-              </DropdownButton> */}
             </div>
             <a
               href="#"

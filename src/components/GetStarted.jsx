@@ -9,7 +9,7 @@ import five from "../assets/images/img/cards/5.png";
 import six from "../assets/images/img/cards/IMAGE.png";
 const GetStarted = () => {
   return (
-    <section>
+    <section className="pt-5 pt-lg-0">
       <Container>
         <div>
           <p className=" ff_helvetica  fw_400 fs_xl clrr_white mb-0">

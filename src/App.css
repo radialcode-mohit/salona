@@ -11,7 +11,7 @@
   --fs-3xsm: 11px;
   --fs-4xsm: 13px;
   --fs-sm: 11px;
-  --fs-2sm: 18px;
+  --fs-2sm: 14px;
   --fs-3sm: 19px;
   --fs-4sm: 17px;
   --fs-md: 14px;
@@ -23,12 +23,12 @@
   --fs-3lg: 24px;
   --fs-4lg: 37px;
   --fs-xl: 22px;
-  --fs-2xl: 31px;
+  --fs-2xl: 28px;
   --fs-3xl: 40px;
   --fs-4xl: 42px;
   --fs-5xl: 68px;
   --fs-6xl: 27px;
-  --fs-7xl: 94px;
+  --fs-7xl: 53px;
   --fs-8xl: 53px;
   --fs-9xl: 106px;
   --fs-10xl: 110px;
@@ -204,6 +204,13 @@
 }
 .br_36px {
   border-radius: 36px;
+}
+.bg_green {
+  transition: all 0.2s linear;
+}
+.bg_green:hover {
+  background: #14f195 !important;
+  color: #000 !important;
 }
 .purple_bglinear {
   background: linear-gradient(98.88deg, #8c01fa -2.99%, #000000 102.28%);
@@ -460,6 +467,7 @@
   background: #14f195;
   border: 1px solid #000000;
 }
+
 .br_800 {
   border-radius: 800px;
 }
@@ -527,6 +535,20 @@
 }
 .clr_green {
   color: #19fb9b;
+}
+.purple_blur_bg {
+  background: rgba(240, 135, 255, 0.3);
+  filter: blur(250px);
+  border-radius: 100px;
+  height: 642px;
+  z-index: -1;
+  width: 100%;
+}
+.p_12_22 {
+  padding: 12px 22px;
+}
+.br_24 {
+  border-radius: 24px;
 }
 @media (min-width: 576px) {
   :root {
@@ -651,8 +673,8 @@
 @media (max-width: 364px) {
   .mobile_nav_modification {
     position: fixed;
-    top: 114.5px !important;
-    height: calc(100vh -114.5px) !important;
+    top: 112.5px !important;
+    height: calc(100vh -112.5px) !important;
     width: 300px;
     background: linear-gradient(260.33deg, #0047ff -13.37%, #00bcd4 109.53%);
     transition: all 0.2s linear;
@@ -767,5 +789,10 @@
     top: -1px;
     z-index: -1;
     max-width: 1200px;
+  }
+}
+@media (max-width: 1400px) {
+  .w_100_max1400 {
+    width: 100%;
   }
 }
