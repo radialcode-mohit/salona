@@ -4,6 +4,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 import FirstPage from "./components/FirstPage";
 import SecondPage from "./components/SecondPage";
 import { Route, Routes } from "react-router-dom";
+import Preloader from "./components/Preloader";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" Component={FirstPage}></Route>
         <Route path="/second" Component={SecondPage}></Route>
       </Routes>
+      <Preloader />
     </>
   );
 }
